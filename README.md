@@ -4,9 +4,6 @@ repositório para serem salvos os códigos feitos para a disciplina de Redes do 
 
 ## Bibliotecas usadas
 
-```python
-import socket
-
 # :hammer: linguagens usadas
 
 - `Python`: 
