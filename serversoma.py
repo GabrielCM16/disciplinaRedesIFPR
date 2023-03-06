@@ -1,6 +1,6 @@
 import socket
 
-port = 10509
+port = 10501
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -22,9 +22,22 @@ while True:
 
     print(f'Cliente: {data.decode()}')
 
-    operacao = fraseC[2]
+        
+    frasee = fraseC.split()
 
-    calculo = int(fraseC[0]) + int(fraseC[4])
+    print(frasee)
+
+    if frasee[1] == '+':
+        calculo = int(frasee[0]) + int(frasee[2])
+    if frasee[1] == '-':
+        calculo = int(frasee[0]) - int(frasee[2])
+    if frasee[1] == '*':
+        calculo = int(frasee[0]) * int(frasee[2])
+    if frasee[1] == '/':
+        calculo = int(frasee[0]) / int(frasee[2])
+    
+
+
 
     print(calculo)
 
@@ -36,4 +49,3 @@ while True:
 
     #encerra a conexao
 conn.close()
-

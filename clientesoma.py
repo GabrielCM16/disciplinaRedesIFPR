@@ -1,6 +1,6 @@
 import socket
 
-port = 10509
+port = 10501
 
 dest = '192.168.246.46'
 #local da conexão
